@@ -7,7 +7,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectContacts } from "../../redux/selectors";
 import { useRef } from "react";
 
-// Use forwardRef properly to forward the ref
 const ContactForm = forwardRef(({ flag, id, setFlag }, ref) => {
   const btnRef = useRef();
 
@@ -43,7 +42,6 @@ const ContactForm = forwardRef(({ flag, id, setFlag }, ref) => {
         setPhone(contact.phone);
       }
     } else {
-      // Reset initial values if flag is not "change"
       setName("");
       setPhone("");
     }
@@ -77,7 +75,7 @@ const ContactForm = forwardRef(({ flag, id, setFlag }, ref) => {
               type="text"
               name="name"
               id={userId1}
-              innerRef={ref} // Assign ref to the input field
+              innerRef={ref}
             />
             <ErrorMessage className={css.err} name="name" component="p" />
             <label htmlFor={userId2}>Number</label>
