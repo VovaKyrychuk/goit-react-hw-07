@@ -1,5 +1,6 @@
-import { Contact } from "../Contact/Contact";
 import css from "./ContactList.module.css";
+
+import { Contact } from "../Contact/Contact";
 import { useSelector } from "react-redux";
 import { ColorRing } from "react-loader-spinner";
 import { selectLoading, selectVisibleContacts } from "../../redux/selectors";

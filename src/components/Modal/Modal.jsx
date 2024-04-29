@@ -43,7 +43,9 @@ export const ModalWindow = ({ isOpen, setIsOpen, id }) => {
         shouldCloseOnEsc={true}
         className={css.box}
       >
-        <h2 className={css.title}>Are you sure you want to delete?</h2>
+        <h2 className={css.title}>
+          Are you sure you want to delete this contact from your life?
+        </h2>
 
         <div className={css.wrapper}>
           <button
