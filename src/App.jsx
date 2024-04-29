@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import { selectContactsNumber, selectError } from "./redux/selectors";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import "./index.css";
 
 function App() {
   const dispatch = useDispatch();
